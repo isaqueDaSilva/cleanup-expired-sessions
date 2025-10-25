@@ -5,9 +5,6 @@ import time
 from dotenv import load_dotenv
 load_dotenv()
 
-import ssl
-print(ssl.OPENSSL_VERSION)
-
 API_URL = os.getenv('API_URL', 'https://api.example.com/cleanup-sessions')
 API_KEY = os.getenv('API_KEY', 'your_default_api_key')
 HEADERS = {'Authorization': f'Bearer {API_KEY}'}
